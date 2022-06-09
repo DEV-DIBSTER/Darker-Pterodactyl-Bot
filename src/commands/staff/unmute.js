@@ -38,7 +38,6 @@ module.exports = {
             .addField("Moderator", `${message.author.tag} (${message.author.id})`)
             .setColor("BLUE")
             .setTimestamp()
-            .setFooter({text: "Unmute at", iconURL: user.avatarURL()})
 
         const modchan = message.guild.channels.cache.get(config.discord.channels.moderationLogs);
 
